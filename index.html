@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>З днем народження, братан!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="waiting">
+    <audio id="birthdaySong" src="assets/birthday-song.mp3" preload="auto" autoplay loop></audio>
+
+    <canvas id="starsCanvas" aria-hidden="true"></canvas>
+    <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+
+    <main class="stage">
+      <section class="intro" id="intro">
+        <div class="galaxy-glow"></div>
+        <div class="crawl-wrap">
+          <div class="crawl" id="crawlText">
+            <h1>З Днем народження, братан!</h1>
+            <p>Ну що, братан вітаю тебе з Днем народження! 🎂🎉</p>
+            <p>Сьогодні тобі вже 30! Да, це вже майже третина столітя 🥳</p>
+            <p>Тепер ти офіційно не молодий салага, а прям експонат людства з мезозоя 😎</p>
+            <p>Бажаю тобі:</p>
+            <p>💪 Міцного здоров'я — щоб організм працював краще, ніж Вінда після переустановки.</p>
+            <p>💸 Мані — стільки, щоб можна було купувати не по акції.</p>
+            <p>💫 Удачі — щоб можна було зганаяти у Вегас та мати гроші на зворотню дорогу 😂</p>
+            <p>🔥 Нехай усі мрії збуваються, а проблеми гублять твою адресу та йдуть до сусідів.</p>
+            <p>👊 А усі біди обходять тебе стороною, бажано через іншу область, бо який там земельний устрій в Дойчі — точно не знаю.</p>
+            <p>І пам'ятай: 30 років — це не старість. Це уже той вік, коли після веселого вечора організм каже ДАСВІДАНІЯ 😂</p>
+            <p>Короче, салага! Знай: ти крутий старший брат, на якого завжди можна покластися.</p>
+            <p>Бажаю тобі ще багато щасливих років, крутих пригод, здоров'я, мані та море позитиву! 🍻🎂🎉</p>
+            <p>З Днюхою тебе, Братан!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery hidden" id="gallery" aria-live="polite">
+        <div class="photo-frame">
+          <img id="slidePhoto" alt="Фото-привітання" />
+          <div class="photo-shine"></div>
+        </div>
+        <div class="photo-caption">
+          <span id="photoCounter">1 / 1</span>
+          <strong>Братан, це твій зоряний архів</strong>
+        </div>
+      </section>
+
+      <section class="final hidden" id="final">
+        <p class="small">30 років на орбіті</p>
+        <h2>З днем народження, братан!</h2>
+        <p>Нехай життя буде гучним, світлим і щедрим на щасливі моменти.</p>
+      </section>
+
+      <button class="start-button" id="startButton" type="button">Запустити привітання</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
